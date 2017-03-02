@@ -11,10 +11,10 @@ public class validator
 		if( pointValid(str)) {
 			count++;
 		}
-		if( domainValid(str)) {
+		if( gmailValid(str)) {
 			count++;
 		}
-		if( comValid(str)) {
+		if( sizeValid(str)) {
 			count++;
 		}
 		return count;
@@ -25,10 +25,10 @@ public class validator
 	public static boolean pointValid( String str) {
 		return str.matches("*\\.*");
 	}
-	public static boolean domainValid( String str) {
-		return str.matches("*gmail*");
+	public static boolean gmailValid( String str) {
+		return str.matches("*gmail.com");
 	}
-	public static boolean comValid( String str) {
-		return str.matches("*com");
+	public static boolean sizeValid( String str) {
+		return str.matches("*");
 	}
 }
