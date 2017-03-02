@@ -14,9 +14,9 @@ public class validator
 		return count;
 	}
 	public static boolean atValid( String str) {
-		return str.matches("[^@}@[^@]");
+		return str.matches("[^@]*@[^@]*");
 	}
 	public static boolean pointValid( String str) {
-		return str.matches("*\\.*");
+		return str.matches(".*\\..*");
 	}
 }
