@@ -20,15 +20,15 @@ public class validator
 		return count;
 	}
 	public static boolean atValid( String str) {
-		return str.matches("[^@}@[^@]");
+		return str.matches("[^@]*@[^@]*");
 	}
 	public static boolean pointValid( String str) {
-		return str.matches("*\\.*");
+		return str.matches(".*\\..*");
 	}
 	public static boolean gmailValid( String str) {
-		return str.matches("*gmail.com");
+		return str.matches(".*gmail.com");
 	}
 	public static boolean sizeValid( String str) {
-		return str.matches("*");
+		return str.matches(".+");
 	}
 }
